@@ -25,7 +25,16 @@ def rec(source):
                 break
         else:
             i += 1
+
+    dog = result[0]
+    led = result[1]
+    lights = result[2]
+
+
     print(result)
+    print(dog)
+    print(led)
+    print(lights)
 
 if __name__ == "__main__":
     r = sr.Recognizer()
@@ -33,6 +42,7 @@ if __name__ == "__main__":
         while 1:
             try:
                 rec(source)
+
             except:
                 continue
 
